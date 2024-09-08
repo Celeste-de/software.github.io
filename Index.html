@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar Computadoras Inalámbricamente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CONECTANDO 5 LAPTOS A UNA RED LAN LOCAL INALAMBRICA </h1>
+    <h3>Se conectaron 5 laptos a una red privada LAN local la  
+    <br>cual consiste en mandar archivos a otro dispositivo que los reciba 
+    <br>Se Implemento un firewalls en cada dispositivo para evitar 
+    <br>accesos no autorizados. </h3>
+
+    <div class="book">
+        
+        <p><br> Jonathan González
+            <br>  Rafael Martinez
+            <br>  Sofia Ruiz
+            <br>  Natalia Turbin
+            <br>  Celeste Vasquez</p>
+       
+        <div class="cover">
+            <p><h2>INTEGRANTES</h2></p>
+        </div>
+       </div>
+    <div class="container">
+        <div class="step">
+            <h2>Paso 1: Configurar el adaptador de red </h2>
+            <p>En conexion inalambrica se busco la sección 
+            de "Redes e Internet" o "Conexiones" y selecciona "Wi-Fi"
+            se configuro para que estuviera en red LAN privada </p>
+            <button class="button" onclick="mostrarOcultarImagen(1)">Mostrar/Ocultar Imágenes</button>
+            <div class="image-container" data-step="1">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\CONEXION.jpg" alt="Configurar Router 1">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\Captura de pantalla 2024-09-03 073216.png" alt="Configurar Router 2">
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Paso 2: Conectar las Computadoras a la Red Wi-Fi</h2>
+            <p>Enciende la computadora y habilita el adaptador Wi-Fi. Busca la red 
+                configurada y conéctate introduciendo la contraseña.</p>
+            <button class="button" onclick="mostrarOcultarImagen(2)">Mostrar/Ocultar Imágenes</button>
+            <div class="image-container" data-step="2">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\CONECTAR A LA RED.jpg" alt="Conectar Computadora a Wi-Fi 1">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\CONEXION_4.jpg" alt="Conectar Computadora a Wi-Fi 3">
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Paso 3: Compartir Archivos y Recursos</h2>
+            <p>Al compartir archivos entre computadoras, se  configura la red privada activando la 
+                detección de redes y el uso compartido de archivos en dispositivos en la configuración avanzada 
+                en este caso las laptos</p>
+            <button class="button" onclick="mostrarOcultarImagen(3)">Mostrar/Ocultar Imágenes</button>
+            <div class="image-container" data-step="3">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\ARCHIVO.jpg" alt="Compartir Archivos en Red 1">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\CONEXION_1.jpg"alt="Compartir Archivos en Red 2">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\RECIBIDO.jpg" alt="Compartir Archivos en Red 3">
+            </div>
+        </div>
+       
+
+        <div class="step">
+            <h2>Paso 4: Comprobar la Conexión</h2>
+            <p>Verifica que ambas computadoras tengan acceso a Internet y que se puedan ver entre sí en
+                 la red para compartir recursos.</p>
+            <button class="button" onclick="mostrarOcultarImagen(4)">Mostrar/Ocultar Imágenes</button>
+            <div class="image-container" data-step="4">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\COMPROBACION.jpg" alt="Comprobar Conexión 1">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\COMPROBAR_PING.jpg" alt="Comprobar Conexión 2">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\pig a laptop.jpg"alt="Comprobar Conexión 3">
+                <img src="C:\Users\MINEDUCYT\Desktop\REDLAN1\WhatsApp Image 2024-09-03 at 11.17.21 AM.jpeg" alt="Comprobar Conexión 4">
+            </div>
+        </div>
+    </div>
+   
+
+    <div class="video-container">
+        <h1>¿COMO FUNCIONA?</h1>
+        <button onclick="reproducirVideo()">Reproducir Video</button>
+        <iframe id="videoFrame" src="https://www.youtube.com/embed/mi_5pmyeVgY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function reproducirVideo() {
+            var video = document.getElementById('videoFrame');
+            video.style.display = 'block'; 
+            video.src += "?autoplay=1"; 
+        }
+    </script>
+    <script src="ocultar.js"></script>
+</body>
+</html>
